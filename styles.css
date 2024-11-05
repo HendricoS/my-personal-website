@@ -12,14 +12,28 @@ body {
   color: #f4f4f4; /* White text color */
 }
 
-button {
+#toggle-button {
   padding: 10px 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  color: #35424a;
+  font-weight: bolder;
+  background-color: #f4f4f4;
+  border: none;
   cursor: pointer;
+  transition: transform ease-in-out 1.5s, background-color ease-in-out 1.5s,
+    color ease-in-out 1.5s;
+}
+
+#toggle-button:hover {
+  transform: scale(1.1);
+  background-color: #a3b2bb; /* Change background color */
+  color: #f4f4f4; /* Change text color */
 }
 
 header {
-  background: #35424a;
+  background-color: #35424a;
   color: white;
   padding: 10px 20px;
   text-align: center;

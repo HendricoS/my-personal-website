@@ -4,44 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1>Welcome to my Website!</h1>
+      <button id="toggle-button">Toggle Dark Mode</button>
     </header>
     <main>
-      <h2>About Me</h2>
-      <p>
-        Hello! I’m Hendrico Stapelberg, and I’m excited to share my journey into
-        the world of web design and development. After spending years in
-        security management, I decided to pursue my passion for technology and
-        creativity at the age of 34. As a novice developer, I’m dedicated to
-        honing my skills and expanding my knowledge in web development.
-      </p>
-      <p>
-        Currently, I have a solid foundation in HTML, CSS, and JavaScript, and
-        I’m actively learning frameworks and technologies like React.js,
-        Express.js, Node.js, MongoDB, and SASS. I believe in the power of
-        continuous learning and strive to keep up with the latest industry
-        trends and best practices.
-      </p>
-      <p>
-        This website showcases my projects and my growth as I explore the
-        dynamic landscape of web development. I’m excited to connect with fellow
-        developers, designers, and anyone interested in this field.
-      </p>
+      <div class="profile-image-container">
+        <img
+          class="profile-image"
+          src="./images/profile1.jpg"
+          alt="Photo of Hendrico Stapelberg"
+        />
+      </div>
 
-      <p>
-        Thank you for visiting my site, and I hope you enjoy exploring my work!
-      </p>
+      <div class="information-wrapper">
+        <h2>About Me</h2>
+        <p>
+          Hello! I’m Hendrico Stapelberg, and I’m excited to share my journey
+          into the world of web design and development. After spending years in
+          security management, I decided to pursue my passion for technology and
+          creativity at the age of 34.
+        </p>
+        <p>
+          As a novice developer, I’m dedicated to honing my skills and expanding
+          my knowledge in web development. Currently, I have a solid foundation
+          in HTML, CSS, and JavaScript, and I’m actively learning frameworks and
+          technologies like React.js, Express.js, Node.js, MongoDB, and SCSS. I
+          believe in the power of continuous learning and strive to keep up with
+          the latest industry trends and best practices. This website showcases
+          my projects and my growth as I explore the dynamic landscape of web
+          development. I’m excited to connect with fellow developers, designers,
+          and anyone interested in this field.
+        </p>
+        <p>
+          Thank you for visiting my site, and I hope you enjoy exploring my
+          work!
+        </p>
+      </div>
 
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
+      <div class="projects-wrapper">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a
+              href="https://hendricos.github.io/new-calculator/"
+              target="_blank"
+              >Project 1: Calculator</a
+            >
+          </li>
+
+          <li><a class="project-item" href="#">Project 2</a></li>
+          <li><a class="project-item" href="#">Project 3</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-me-wrapper">
+        <p>
+          <a href="tel:+27658774694" class="tel">
+            <i class="fas fa-phone icon fa-2x"></i>
+            065 877 4694</a
+          >
+        </p>
+        <p>
+          <a href="mailto:hendrico.stapelberg@gmail.com" class="email">
+            <i class="fas fa-envelope icon fa-2x"></i>
+            hendrico.stapelberg@gmail.com</a
+          >
+        </p>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 Hendrico Stapelberg. All rights reserved.</p>

@@ -3,7 +3,19 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Default background color */
+  color: black; /* Default text color */
+}
+
+.dark-mode {
+  background-color: black; /* Dark background color */
+  color: #f4f4f4; /* White text color */
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 header {
@@ -17,8 +29,63 @@ main {
   padding: 20px;
 }
 
+.profile-image-container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden !important;
+  object-fit: cover;
+  transition: transform ease-in-out 2s;
+  cursor: pointer;
+}
+
+.profile-image:hover {
+  transform: rotate(360deg);
+}
+
+.information-wrapper {
+  margin-bottom: 2.5em;
+}
+
 h2 {
   color: #35424a;
+}
+
+/* Projects information (CSS) */
+.projects-wrapper {
+  line-height: 2rem;
+}
+
+.project-item {
+  color: #35424a;
+  text-decoration: none;
+}
+
+/* Contact information (CSS) */
+.contact-me-wrapper {
+  display: flex;
+  padding-top: 1.5rem;
+  margin-left: 1rem;
+  gap: 50px; /* Adjust the space between icons */
+}
+
+.icon {
+  margin-right: 8px; /* Existing margin between icon and text */
+  margin-left: 10px; /* Add space between icons */
+  color: #35424a;
+}
+
+.tel,
+.email {
+  text-decoration: none;
+  color: #35424a;
+  font-weight: bolder;
 }
 
 footer {

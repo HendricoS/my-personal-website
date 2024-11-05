@@ -60,7 +60,7 @@ main {
 }
 
 .profile-image:hover {
-  transform: rotate(360deg);
+  transform: rotate(45deg);
 }
 
 .information-wrapper {
@@ -77,6 +77,11 @@ h2 {
 }
 
 .project-item {
+  color: #35424a;
+  text-decoration: none;
+}
+
+.project-item:active {
   color: #35424a;
   text-decoration: none;
 }
